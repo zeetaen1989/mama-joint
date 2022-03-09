@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -15,8 +17,3 @@ a {
   text-decoration: none;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}

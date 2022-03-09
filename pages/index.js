@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Nav from "../app/components/layouts/Nav/Nav";
 
 const Home = () => {
 	return (
@@ -15,11 +15,7 @@ const Home = () => {
 				<meta author="Pizza Delivery Services" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<body>
-				<h1 className="text-3xl font-bold underline">
-					Hello World!
-				</h1>
-			</body>
+			<Nav />
 			{/* <Hero /> */}
 		</>
 	);

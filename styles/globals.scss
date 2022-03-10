@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;900&display=swap');
+@import "/styles/abstracts/variables";
 
 /* Base Styling Resets */
 
@@ -50,7 +51,7 @@ hr {
 }
 
 a {
-  color: black;
+  color: $secondary-clr;
   text-decoration: none;
 }
 

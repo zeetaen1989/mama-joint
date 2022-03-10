@@ -15,7 +15,12 @@ const Home = () => {
 				<meta author="Pizza Delivery Services" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Nav />
+			<div className="nav" style={{ position: "relative", zIndex: "999" }}>
+				<Nav />
+			</div>
+			<div className="hero" style={{ position: "absolute", zIndex: "1" }}>
+				<Hero />
+			</div>
 			<Footer />
 		</>
 	);

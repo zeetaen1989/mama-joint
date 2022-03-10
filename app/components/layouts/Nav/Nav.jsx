@@ -43,10 +43,6 @@ const Nav = () => {
     />
   );
 
-  const handleClose = () => {
-    setOpen: false;
-  }
-
   return (
     <>
       <header className={styles.header}>
@@ -58,14 +54,6 @@ const Nav = () => {
         <nav className={styles.header__center}>
           <ul>
             <li>
-              {/* {linkItems.map(item => {
-                <a
-                  key={item}
-                  href={`/#${item.replace(/\s+/g, "").toLowerCase()}`}
-                >
-                  {item}
-                </a>;
-              })} */}
               <Link href="#menu" passHref>Menu</Link>
               <Link href="#about" passHref>About Us</Link>
               <Link href="#specials" passHref>Our Specials</Link>

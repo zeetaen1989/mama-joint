@@ -1,0 +1,19 @@
+@import "/styles/abstracts/variables";
+
+@mixin span-clr {
+    color: $tertiary-clr;
+}
+
+@mixin button-style {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 0.6rem 2rem;
+    user-select: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

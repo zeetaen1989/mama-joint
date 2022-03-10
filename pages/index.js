@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Nav, Footer } from "../app/components/layouts";
+import { Nav, Footer, Hero } from "../app/components/layouts";
 
 const Home = () => {
 	return (

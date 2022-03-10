@@ -1,3 +1,13 @@
+//*********FONTS********
+$font-family-primary: 'Poppins', sans-serif;
+$font-family-secondary: 'Abhaya Libre', serif;
+
+//*********COLORS*********
+// Primary Colors
+$primary-clr: #EA0000;
+$secondary-clr: #2A333E;
+$tertiary-clr: #8f9aa7;
+
 //*********MEDIA QUERIES*********
 // 320px - 480px for mobile devices
 $mobile: 480px;
@@ -8,8 +18,3 @@ $desktop: 1024px;
 // 1025px - 1200px for large desktop devices
 $largeDesktop: 1600px;
 // 1201px - 1600px for xlarge desktop devices
-
-//*********COLORS*********
-// Primary Colors
-$primary-clr: #EA0000;
-$secondary-clr: #2A333E;

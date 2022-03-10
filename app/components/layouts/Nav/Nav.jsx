@@ -10,15 +10,41 @@ import {
 import { CgMenuHotdog } from "react-icons/cg";
 import styles from "./Nav.module.scss";
 
+const iconStyle = {
+  color: "#2A333E",
+  fontSize: "1.5rem",
+  cursor: "pointer",
+  _hover: {
+    color: "#000000",
+  }
+}
+
 const Nav = () => {
+
+  const [open, setOpen] = useState(false);
+
+  const openMenu = (
+    <CgMenuHotdog
+      style={iconStyle}
+      className={styles.header__menu__open}
+      onClick={() => {
+        setOpen(!open);
+      }}
+    />
+  );
   
-  const iconStyle = {
-    color: "#2A333E",
-    fontSize: "1.5rem",
-    cursor: "pointer",
-    _hover: {
-      color: "#000000",
-    }
+  const closeMenu = (
+    <MdRestaurantMenu
+      style={iconStyle}
+      className={styles.header__menu__close}
+      onClick={() => {
+        setOpen(!open);
+      }}
+    />
+  );
+
+  const handleClose = () => {
+    setOpen: false;
   }
 
   return (
@@ -53,12 +79,7 @@ const Nav = () => {
           <MdOutlineShoppingCart style={iconStyle} />
           <MdOutlineAccountCircle style={iconStyle} />
           <div className={styles.header__menu}>
-            <div className={styles.header__menu__open}>
-              <CgMenuHotdog style={iconStyle} />
-            </div>
-            <div className={styles.header__menu__close}>
-              <MdRestaurantMenu style={iconStyle} />
-            </div>
+            {open ? closeMenu : openMenu}
           </div>
         </div>
       </header>

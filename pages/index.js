@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Nav from "../app/components/layouts/Nav/Nav";
+import { Nav, Footer } from "../app/components/layouts";
 
 const Home = () => {
 	return (
@@ -16,7 +16,7 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Nav />
-			{/* <Hero /> */}
+			<Footer />
 		</>
 	);
 };

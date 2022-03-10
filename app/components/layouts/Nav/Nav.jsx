@@ -54,11 +54,21 @@ const Nav = () => {
         <nav className={styles.header__center}>
           <ul>
             <li>
-              <Link href="#menu" passHref>Menu</Link>
-              <Link href="#about" passHref>About Us</Link>
-              <Link href="#specials" passHref>Our Specials</Link>
-              <Link href="#locations" passHref>Our Locations</Link>
-              <Link href="#chef" passHref>Our Chef</Link>
+              <Link href="#menu" passHref>
+                Menu
+              </Link>
+              <Link href="#about" passHref>
+                About Us
+              </Link>
+              <Link href="#specials" passHref>
+                Our Specials
+              </Link>
+              <Link href="#locations" passHref>
+                Our Locations
+              </Link>
+              <Link href="#chef" passHref>
+                Our Chef
+              </Link>
             </li>
           </ul>
         </nav>

@@ -18,7 +18,6 @@
 
         a {
           position: relative;
-          transition: all 0.25s linear;
 
           &::after {
             content: "";
@@ -39,9 +38,6 @@
 
             &::after {
               transform: scaleX(1);
-              transform-origin: left;
-              width: 100%;
-              transition: all 0.25s ease-out;
             }
           }
         }

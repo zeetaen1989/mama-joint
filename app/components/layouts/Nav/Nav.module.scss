@@ -15,6 +15,7 @@
       li {
         display: flex;
         gap: 4rem;
+        text-align: center;
 
         a {
           position: relative;
@@ -66,7 +67,6 @@
 @media screen and (max-width: $mobile) {
   .header {
     padding: 0.5rem;
-    text-align: center;
 
     .header__center {
       ul {

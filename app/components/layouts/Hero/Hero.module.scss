@@ -13,7 +13,6 @@
             margin-left: 5rem;
 
             .row__one {
-
                 .desc {
                     color: $primary-clr;
                     text-transform: uppercase;
@@ -26,6 +25,7 @@
                     padding-left: 2rem;
                     font-family: $font-family-secondary;
                     margin-bottom: -3rem;
+                    letter-spacing: -0.5rem;
                 }
 
                 .info {
@@ -36,98 +36,70 @@
 
             .row__two {
                 display: flex;
-                gap: 2rem;
                 margin-top: 3rem;
 
-                .btn__cart {
+                button {
                     @include button-style;
-                    background-color: $primary-clr;
-                    box-shadow:
-                        0px 100px 80px rgba(234, 0, 37, 0.1),
-                        0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
-                        0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
-                        0px 20px 13px rgba(234, 0, 37, 0.05),
-                        0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
-                        0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+                    position: relative;
+
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                        height: 0;
+                        width: 0;
+                        border-style: solid;
+                        border-width: 0;
+                    }
+
+                &.btn__cart {
+                        background-color: $primary-clr;
+                        border-color: $primary-clr;
+                        border-top-right-radius: 0rem;
+
+                        &::after, &::before {
+                            border-width: 0 0 2.4rem 1.7rem;
+                            top: 0;
+                        }
+
+                        &::before {
+                            border-color: transparent;
+                        }
+
+                        &:after {
+                            right: 0px;
+                            border-color: white transparent;
+                        }
+                    }
+
+                    &.btn__book {
+                        background-color: $secondary-clr;
+                        border-color: $secondary-clr;
+                        border-bottom-left-radius: 0rem;
+
+                        &::after, &::before {
+                            border-width: 2.3rem 1.7rem 0 0;
+                            top: 0;
+                        }
+
+                        &::before {
+                            left: 0px;
+                            top: 0px;
+                            border-color: white transparent;
+                        }
+
+                        &:after {
+                            border-color: transparent;
+                        }
+                    }
                 }
-
-                .btn__book {
-                    @include button-style;
-                    background-color: $secondary-clr;
-                    box-shadow:
-                        0px 100px 80px rgba(68, 68, 68, 0.1),
-                        0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
-                        0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
-                        0px 20px 13px rgba(68, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
-                        0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
-                }
-
-                // aside {
-                //     @include button-style;
-                //     position: relative;
-
-                //     &::before, &::after {
-                //         content: "";
-                //         position: absolute;
-                //         height: 0;
-                //         width: 0;
-                //         border-style: solid;
-                //         border-width: 0;
-                //     }
-
-                // &.btn__cart {
-                    //     background-color: $primary-clr;
-                    //     border-color: $primary-clr;
-                    //     border-top-right-radius: 0;
-
-                    //     &::after, &::before {
-                    //         border-width: 2.5rem 1.5rem 0 0;
-                    //         top: 0;
-                    //     }
-
-                    //     &::before {
-                    //         left: 2px;
-                    //         top: 0px;
-                    //         border-color: transparent;
-                    //     }
-
-                    //     &:after {
-                    //         right: -22px;
-                    //         border-color: $primary-clr transparent;
-                    //     }
-                    // }
-
-                    // &.btn__book {
-                    //     background-color: $secondary-clr;
-                    //     border-color: $secondary-clr;
-                    //     border-bottom-left-radius: 0;
-
-                    //     &::after, &::before {
-                    //         border-width: 2.5rem 1.5rem 0 0;
-                    //         top: 0;
-                    //     }
-
-                    //     &::before {
-                    //         left: -22px;
-                    //         top: 0px;
-                    //         border-color: transparent $secondary-clr;
-                    //     }
-
-                    //     &:after {
-                    //         right: -10px;
-                    //         border-color: transparent;
-                    //     }
-                    // }
-                // }
             }
 
             .row__three {
                 display: flex;
-                gap: 4.5rem;
-                margin-top: 5rem;
+                gap: 2.5rem;
+                margin-top: 4rem;
 
-                .lunch {
-
+                .lunch, .dinner {
                     span {
                         @include span-clr;
                     }
@@ -183,18 +155,6 @@
                 margin-top: 5rem;
                 margin-left: 2rem;
 
-                .row__two {
-                    gap: 1.5rem;
-
-                    .btn__cart {
-                        padding: 0.6rem 1rem;
-                    }
-
-                    .btn__book {
-                        padding: 0.6rem 1rem;
-                    }
-                }
-
                 .row__three {
                     gap: 2rem;
                 }
@@ -202,7 +162,7 @@
         }
 
         .container__two {
-            margin-right: 2rem;
+            margin-right: -2rem;
 
             .column__two {
                 
@@ -235,18 +195,28 @@
                 }
 
                 .row__two {
-                    margin-top: 1.5rem;
+                    margin-top: 3rem;
+
+                    button {
+                        padding: 0.5rem 1.2rem;
+                    }
                 }
 
                 .row__three {
-                    margin-top: 1.5rem;
+                    margin-top: 3rem;
+                    gap: 1rem;
+
+                    .lunch, .dinner {
+                        span {
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
             }
         }
 
         .container__two {
             .column__two {
-
                 .price {
                     top: 7rem;
                     font-size: 2rem;
@@ -264,6 +234,24 @@
         .container__one {
             .column__one {
                 margin-top: 1rem;
+
+                .row__one {
+                    h1 {
+                        margin-top: -1rem;
+                    }
+                }
+
+                .row__two {
+                    margin-top: 1rem;
+
+                    button {
+                        padding: 0.5rem 2rem
+                    }
+                }
+
+                .row__three {
+                    margin-top: 1rem;
+                }
             }
         }
     }

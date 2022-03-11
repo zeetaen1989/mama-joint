@@ -65,6 +65,7 @@
       ul {
         li {
           gap: 1.5rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -74,14 +75,7 @@
 // Responsiveness for tablet of width 768px and below
 @media screen and (max-width: $tablet) {
   .header {
-    padding: 0.5rem 0rem;
-  }
-}
-
-// Responsive Mobile for width 480px and below
-@media screen and (max-width: $mobile) {
-  .header {
-    padding: 0rem 0rem 0rem 1rem;
+    padding: 0.5rem 1.5rem;
 
     .header__center {
       ul {
@@ -98,6 +92,20 @@
       .header__menu {
         font-size: 1.8rem;
         display: flex;
+      }
+    }
+  }
+}
+
+// Responsive Mobile for width 480px and below
+@media screen and (max-width: $mobile) {
+  .header {
+
+    .header__center {
+      ul {
+        li {
+          display: none;
+        }
       }
     }
   }

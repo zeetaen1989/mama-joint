@@ -31,29 +31,32 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.container__two}>
                 <div className={styles.column__two}>
-					<span className={styles.price}>
-						$14.97
-					</span>
-					<div className={styles.img__top}>
-						<Image
-							src="/images/leaves-overlay.png"
-							width={600}
-							height={450}
-							alt="Mint Leaves"
-						/>
-					</div>
-					<div className={styles.img__bottom}>
-						<Image
-							src="/images/hero-img.png"
-							width={600}
-							height={610}
-							alt="Kebabs"
-						/>
-					</div>
+                    <span className={styles.price}>
+                        $14.97
+                    </span>
+                    <div className={styles.img__top}>
+                        <Image
+                            src="/images/leaves-overlay.png"
+                            width={600}
+                            height={450}
+                            alt="Mint Leaves"
+                        />
+                    </div>
+                    <div className={styles.img__bottom}>
+                        <Image
+                            src="/images/hero-img.png"
+                            width={600}
+                            height={610}
+                            alt="Kebabs"
+                            priority
+                        />
+                    </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -47,26 +47,26 @@ const Nav = () => {
     <>
       <header className={styles.header}>
         <div className={styles.header__left}>
-          <Link href="/" passHref>
+          <Link href="/" passHref >
             <Image src="/images/logo.svg" alt="Logo" height={30} width={100} />
           </Link>
         </div>
         <nav className={styles.header__center}>
           <ul>
             <li>
-              <Link href="#menu" passHref>
+              <Link href="#menu">
                 Menu
               </Link>
-              <Link href="#about" passHref>
+              <Link href="#about">
                 About Us
               </Link>
-              <Link href="#specials" passHref>
+              <Link href="#specials">
                 Our Specials
               </Link>
-              <Link href="#locations" passHref>
+              <Link href="#locations">
                 Our Locations
               </Link>
-              <Link href="#chef" passHref>
+              <Link href="#chef">
                 Our Chef
               </Link>
             </li>

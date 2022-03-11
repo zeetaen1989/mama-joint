@@ -1,5 +1,41 @@
 @import "/styles/abstracts/variables";
 
 .container {
+    margin: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+
+    .container__img {
+        position: absolute;
+        top: 10rem;
+        left: 0;
+    }
+
+    .container__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        h1 {
+            color: $primary-clr;
+            font-family: $font-family-secondary;
+            font-size: 4rem;
+        }
+
+        .header__img {
+            margin-top: -1rem;
+            margin-left: -12rem;
+        }
+    }
 }

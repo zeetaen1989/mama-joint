@@ -25,7 +25,7 @@ const Hero = () => {
                             <h4>Lunch</h4>
                             <span className={styles.time}>1:00 - 3:00pm</span>
                         </div>
-                        <div className={styles.lunch}>
+                        <div className={styles.dinner}>
                             <h4>Dinner</h4>
                             <span className={styles.time}>7:00 - 10:00pm</span>
                         </div>

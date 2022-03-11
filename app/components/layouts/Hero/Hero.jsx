@@ -3,8 +3,8 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
     return (
-        <>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <div className={styles.container__one}>
                 <div className={styles.column__one}>
                     <div className={styles.row__one}>
                         <p className={styles.desc}>Now taking online orders</p>

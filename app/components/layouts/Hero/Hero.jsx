@@ -48,8 +48,8 @@ const Hero = () => {
                     <div className={styles.img__bottom}>
                         <Image
                             src="/images/hero-img.png"
-                            width={600}
-                            height={610}
+                            width={500}
+                            height={540}
                             alt="Kebabs"
                             priority
                         />

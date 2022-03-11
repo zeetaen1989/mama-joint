@@ -9,8 +9,8 @@
         flex: 1;
 
         .column__one {
-            margin-top: 10rem;
-            margin-left: 5rem;
+            margin-top: 5rem;
+            margin-left: 8rem;
 
             .row__one {
                 .desc {
@@ -113,13 +113,15 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 5rem;
 
         .column__two {
             position: relative;
             
             .price {
                 position: absolute;
-                top: 10rem;
+                top: 5rem;
+                left: -8rem;
                 z-index: 15;
                 color: $tertiary-clr;
                 font-size: 4rem;
@@ -148,9 +150,7 @@
 // Desktop
 @media screen and (max-width: $desktop) {
     .container {
-
         .container__one {
-
             .column__one {
                 margin-top: 5rem;
                 margin-left: 2rem;
@@ -162,12 +162,12 @@
         }
 
         .container__two {
-            margin-right: -2rem;
+            margin-right: 2rem;
 
             .column__two {
-                
                 .price {
                     top: 5rem;
+                    left: -2rem;
                 }
 
                 .img__top {
@@ -184,6 +184,8 @@
         padding: 0rem 1rem;
 
         .container__one {
+            flex: 1;
+
             .column__one {
                 margin-left: 1rem;
 
@@ -216,10 +218,21 @@
         }
 
         .container__two {
+            flex: 1;
+            margin-right: 0rem;
+
             .column__two {
                 .price {
                     top: 7rem;
                     font-size: 2rem;
+                }
+
+                .img__top {
+
+                }
+
+                .img__bottom {
+                    // width: 22rem;
                 }
             }
         }

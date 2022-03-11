@@ -75,21 +75,12 @@
 @media screen and (max-width: $tablet) {
   .header {
     padding: 0.8rem;
-
-    .header__center {
-      ul {
-        li {
-
-        }
-      }
-    }
   }
 }
 
 // Responsive Mobile for width 480px and below
 @media screen and (max-width: $mobile) {
   .header {
-    // padding: 0.5rem;
 
     .header__center {
       ul {

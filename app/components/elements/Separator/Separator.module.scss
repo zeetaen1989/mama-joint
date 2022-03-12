@@ -1,0 +1,22 @@
+@import "/styles/abstracts/variables";
+
+.column__separator {
+  width: 0.2rem;
+  height: 22rem;
+  background-color: rgb(235, 227, 227);
+  position: absolute;
+  top: 0;
+  left: 28rem;
+  z-index: 10;
+
+  .separator__active {
+      opacity: 1;
+      height: 2.8rem;
+      background-color: $secondary-clr;
+  }
+
+  .separator__inactive {
+      height: 4.9rem;
+      opacity: 0;
+  }
+}

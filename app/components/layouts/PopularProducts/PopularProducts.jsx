@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 import  styles from "./PopularProducts.module.scss";
-import { products } from "../../../data/products";
+import { products } from "../../../../data/products";
 
 const PopularProducts = () => {
     return (

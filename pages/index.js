@@ -1,9 +1,8 @@
 import Head from "next/head";
-import { Nav,  Footer } from "../app/components/layouts";
+import { Nav,  Footer } from "../app/components/modules";
 import { Hero, PopularProducts, ProductTypes } from "../app/components/templates";
 
 const LandingPage = () => {
-
 	return (
 		<>
 			<Head>

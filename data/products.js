@@ -21,6 +21,6 @@ export const products = [
         id: 4,
         title: "Sweetdish",
         category: "Western",
-        img: "/images/sweetdish.png",
+        img: "/images/sweet-dish.png",
     }
 ]

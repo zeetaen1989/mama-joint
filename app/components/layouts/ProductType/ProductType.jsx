@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Tabs, Separator } from "../../elements";
-import styles from "./ProductTypes.module.scss";
+import styles from "./ProductType.module.scss";
 
 const ProductType = () => {
 

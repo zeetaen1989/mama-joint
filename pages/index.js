@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Nav,  Footer } from "../app/components/modules";
-import { Hero, PopularProducts, ProductTypes } from "../app/components/templates";
+import { Nav, Footer, Category } from "../app/components/modules";
+import { Hero, PopularProducts } from "../app/components/templates";
 
 const LandingPage = () => {
 	return (
@@ -11,7 +11,7 @@ const LandingPage = () => {
 			<Nav />
 			<Hero />
 			<PopularProducts />
-			<ProductTypes />
+			<Category />
 			<Footer />
 		</>
 	);

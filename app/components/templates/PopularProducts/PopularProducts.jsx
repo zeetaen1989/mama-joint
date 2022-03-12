@@ -20,18 +20,19 @@ const PopularProducts = () => {
         {products.map((product) => {
           return (
             <div className={styles.products__list} key={product.id}>
-              <Image
-                key={product.id}
-                src={product.img}
-                height={200}
-                width={210}
-                alt={product.title}
-                className={styles.list__img}
-              />
+              <div className={styles.list__img}>
+                <Image
+                  key={product.id}
+                  src={product.img}
+                  height={200}
+                  width={210}
+                  alt={product.title}
+                />
+              </div>
               <Ratings rating={product.rating} />
               <p className={styles.list__category}>{product.category}</p>
               <h2 className={styles.list__title}>{product.title}</h2>
-              <button type="submit" className={styles.list__btn}>
+              <button className={styles.list__btn}>
                 Add to Cart:
               </button>
             </div>

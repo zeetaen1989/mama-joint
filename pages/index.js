@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Nav, Hero, PopularProducts, Footer, ProductType, } from "../app/components/layouts";
+import { Nav,  Footer } from "../app/components/layouts";
+import { Hero, PopularProducts, ProductTypes } from "../app/components/templates";
 
 const LandingPage = () => {
 
@@ -11,7 +12,7 @@ const LandingPage = () => {
 			<Nav />
 			<Hero />
 			<PopularProducts />
-			<ProductType />
+			<ProductTypes />
 			<Footer />
 		</>
 	);

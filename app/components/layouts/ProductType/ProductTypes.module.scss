@@ -1,0 +1,13 @@
+.container {
+    margin-top: 7rem;
+
+    .container__img {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15rem;
+    }
+
+    .container__column {
+        position: relative;
+    }
+}

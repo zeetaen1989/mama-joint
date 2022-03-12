@@ -1,12 +1,14 @@
 @import "/styles/abstracts/variables";
 
 .column__tab {
-  margin: 2rem 13rem;
+  margin-top: 2rem;
+	margin-left: 13rem;
 
   .tab__active {
     margin: 2rem 0rem;
 
     .tab__btn {
+			user-select: none;
 			display: flex;
 			gap: 0.8rem;
 			justify-content: flex-start;

@@ -43,6 +43,8 @@ const Nav = () => {
     />
   );
 
+  const linkItems = ["Menu", "About Us", "Our Specials", "Our Locations", "Our Chef"];
+
   return (
     <>
       <header className={styles.header}>
@@ -54,21 +56,13 @@ const Nav = () => {
         <nav className={styles.header__center}>
           <ul>
             <li>
-              <Link href="#menu">
-                Menu
-              </Link>
-              <Link href="#about">
-                About Us
-              </Link>
-              <Link href="#specials">
-                Our Specials
-              </Link>
-              <Link href="#locations">
-                Our Locations
-              </Link>
-              <Link href="#chef">
-                Our Chef
-              </Link>
+              {linkItems.map(item => {
+                return (
+                  <Link href={`/${item.replace(/\s+/g, "").toLowerCase()}`} key={item}>
+                    {item}
+                  </Link>
+                )
+              })}
             </li>
           </ul>
         </nav>

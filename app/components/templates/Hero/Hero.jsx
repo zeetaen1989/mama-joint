@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
       <div className={styles.container__two}>
         <div className={styles.column__two}>
-          <span className={styles.price}>$14.97</span>
+          <span className={styles.price}>$4.97</span>
           <div className={styles.img__top}>
             <Image
               src="/images/leaves-overlay.png"

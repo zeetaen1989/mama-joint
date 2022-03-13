@@ -1,0 +1,95 @@
+@import "/styles/abstracts/variables";
+@import "/styles/abstracts/mixins";
+
+.container {
+  margin-top: 5rem;
+
+  .container__header {
+    @include container-header-style;
+
+    h3 {
+      @include subheader-style;
+    }
+
+    h1 {
+      @include header-style;
+    }
+
+    .header__img {
+      margin-right: -20rem;
+    }
+  }
+
+  .container__card {
+    display: flex;
+    gap: 4rem;
+    padding: 5rem 10rem 2rem;
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .card__info {
+        h3 {
+          font-weight: 600;
+          font-size: 1.1rem;
+          line-height: 1;
+        }
+
+        h5 {
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+
+        span {
+          font-size: 0.8rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// *******MEDIA QUERY*******
+
+// Tablet
+@media screen and (max-width: $tablet) {
+  .container {
+    .container__card {
+      gap: 3rem;
+      padding: 3rem 4rem 1rem;
+
+      .cards {
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .container {
+    .container__header {
+      h1 {
+        @include header-title-mobile;
+      }
+      .header__img {
+        margin-right: -10rem;
+      }
+    }
+
+    .container__card {
+      padding: 2rem 2rem 1rem;
+      gap: 2rem;
+      flex-direction: column;
+
+      .cards {
+        gap: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "/styles/abstracts/mixins";
+@import "/styles/abstracts/variables";
+
+.container {
+  margin-top: 7rem;
+  background-color: $opacity-clr;
+  height: 80vh;
+  display: grid;
+  place-content: center;
+}

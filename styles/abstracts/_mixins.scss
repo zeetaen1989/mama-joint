@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0rem 1rem;
 }
 
 // Subheader title
@@ -27,6 +28,18 @@
     font-family: $font-family-secondary;
     font-size: 4rem;
     line-height: 1.2;
+    letter-spacing: -0.1rem;
+}
+
+// Header title in mobile screens
+@mixin header-title-mobile {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+// Header image in mobile screens
+@mixin header-image-mobile {
+    margin-right: -18rem;
 }
 
 // Popular Products Section Button's style

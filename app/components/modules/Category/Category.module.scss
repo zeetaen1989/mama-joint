@@ -1,8 +1,12 @@
-.container {
+.container__column {
+    display: flex;
     margin-top: 5rem;
+    position: relative;
 
-    .container__column {
-        position: relative;
-        display: flex;
-    }
+    // &::before {
+    //     content: "";
+    //     align-self: stretch;
+    //     border: 1px solid red;
+    //     opacity: 0.05;
+    // }
 }

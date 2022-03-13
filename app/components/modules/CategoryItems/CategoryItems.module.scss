@@ -1,10 +1,18 @@
 @import "/styles/abstracts/variables";
 
 .container {
-  .container__bg {
-    background-color: pink;
-    border: none;
-    border-radius: 0.5rem;
-    
+  // flex: 1;
+  position: absolute;
+  background-color: #FFF2F2;
+  border-radius: 1.5rem;
+  height: 25rem;
+  width: 40rem;
+  right: 10rem;
+  top: 3rem;
+
+  .container__subtitle {
+    font-size: 1rem;
+    background-color: hsla(4, 90%, 88%, 1);
+    width: 15rem;
   }
 }

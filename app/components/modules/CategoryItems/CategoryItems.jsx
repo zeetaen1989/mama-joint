@@ -1,10 +1,10 @@
 import styles from "./CategoryItems.module.scss";
 
-const CategoryItems = () => {
+const CategoryItems = ({ tab, setTab }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.conatiner__bg}>
-        
+      <div className={styles.container__subtitle}>
+        <p>Faster Food Delivery Service</p>
       </div>
     </div>
   )

@@ -1,8 +1,6 @@
 @import "/styles/abstracts/variables";
-@import "/styles/abstracts/mixins";
 
 .container {
-    margin: 0;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -87,7 +85,11 @@
                     0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
 
                 &:hover {
-                    opacity: 0.8;
+                    transform: translateY(-1px);
+                }
+
+                &:active {
+                    transform: translateY(1px);
                 }
             }
         }

@@ -102,8 +102,25 @@
 @media screen and (max-width: $mobile) {
     .container {
         .container__header {
+            h1 {
+                @include header-title-mobile;
+            }
+
             .header__img {
-                margin-left: -8rem;
+                @include header-image-mobile;
+            }
+        }
+
+        .container__products {
+            gap: 2rem;
+            margin-top: 1.5rem;
+
+            .products__list {
+                gap: 0.2rem;
+
+                .list__btn {
+                    margin-top: 0.5rem;
+                }
             }
         }
     }

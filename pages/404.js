@@ -1,7 +1,18 @@
-const Error = () => {
+import Head from "next/head";
+import { Error } from "../app/components/layouts";
+import { Footer, Nav } from "../app/components/modules";
+
+const ErrorPage = () => {
   return (
-    <div>This page does not exist.</div>
+    <>
+      <Head>
+        <title>404 Error: Page Not Found</title>
+      </Head>
+      <Nav />
+      <Error />
+      <Footer />
+    </>
   )
 }
 
-export default Error;
+export default ErrorPage;

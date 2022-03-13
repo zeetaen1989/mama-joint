@@ -136,3 +136,17 @@
     }
   }
 }
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .container {
+    .container__header {
+      h1 {
+        @include header-title-mobile;
+      }
+      .header__img {
+        @include header-image-mobile;
+      }
+    }
+  }
+}

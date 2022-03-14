@@ -18,6 +18,7 @@
         text-align: center;
 
         a {
+          color: $secondary-clr;
           position: relative;
 
           &::after {
@@ -31,7 +32,7 @@
             left: 0;
             transform: scaleX(0);
             transform-origin: left;
-            transition: transform 0.25s ease-in;
+            transition: transform 0.25s linear;
           }
 
           &:hover {
@@ -57,10 +58,10 @@
 }
 
 // **********MEDIA QUERIES**********
-// Responsiveness for desktop of width 1024px and below
-@media screen and (max-width: 1024px) {
+// Desktop
+@media screen and (max-width: $desktop) {
   .header {
-
+    padding: 1rem 2rem;
     .header__center {
       ul {
         li {
@@ -72,7 +73,7 @@
   }
 }
 
-// Responsiveness for tablet of width 768px and below
+// Tablet
 @media screen and (max-width: $tablet) {
   .header {
     padding: 0.5rem 1.5rem;
@@ -97,7 +98,7 @@
   }
 }
 
-// Responsive Mobile for width 480px and below
+// Mobile
 @media screen and (max-width: $mobile) {
   .header {
 

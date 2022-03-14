@@ -5,6 +5,7 @@
     color: $tertiary-clr;
 }
 
+//*******HEADER SECTION*******
 // Header container
 @mixin container-header-style {
     display: flex;
@@ -31,17 +32,6 @@
     letter-spacing: -0.1rem;
 }
 
-// Header title in mobile screens
-@mixin header-title-mobile {
-    font-size: 3rem;
-    line-height: 1;
-}
-
-// Header image in mobile screens
-@mixin header-image-mobile {
-    margin-right: -18rem;
-}
-
 // Popular Products Section Button's style
 @mixin button-style {
     position: relative;
@@ -66,15 +56,13 @@
 
 // Image drop-shadow of products
 @mixin products-image {
-    & > span {
-        filter:
-            drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07))
-            drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481))
-            drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185))
-            drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.035))
-            drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815))
-            drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519));
-    }
+    filter:
+        drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07))
+        drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481))
+        drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185))
+        drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.035))
+        drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815))
+        drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519));
 }
 
 // Heart and Cart icons
@@ -135,4 +123,77 @@
             color: $primary-clr;
         }
     }
+}
+
+// MobileApp Section
+// Column Items
+@mixin row-column-items {
+    display: flex;
+    align-items: center;
+}
+
+// Image Item
+@mixin items-image {
+    position: absolute;
+    z-index: 2;
+
+    & > span {
+        @include products-image;
+    }
+}
+
+// Items info
+@mixin items-info {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px 50px rgba(234, 0, 37, 0.17);
+}
+
+// Info Bottom
+@mixin info-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 0.8rem;
+    }
+
+    .bottom__heart {
+        border-radius: 0.3rem;
+        border: 1px solid $primary-clr;
+        display: grid;
+        place-content: center;
+        color: $primary-clr;
+        padding: 0.1rem;
+        cursor: pointer;
+    }
+}
+
+// Menu section
+@mixin menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 0.7;
+    text-align: center;
+}
+
+// Menu text
+@mixin menu-text {
+    font-size: 0.6rem;
+    color: $secondary-clr;
+}
+
+// ********MEDIA QUERY********
+// Header title in mobile screens
+@mixin header-title-mobile {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+// Header image in mobile screens
+@mixin header-image-mobile {
+    margin-right: -18rem;
 }

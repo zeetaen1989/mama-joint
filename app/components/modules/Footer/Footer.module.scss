@@ -50,6 +50,10 @@
 
         .contact__mail {
           @include contact-info;
+
+          a {
+            color: white;
+          }
         }
       }
 

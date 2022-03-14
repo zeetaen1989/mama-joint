@@ -2,7 +2,7 @@ export const menu = [
   {
     id: 1,
     img: "/images/dishim-with-fries-and-sauce.png",
-    ratings: 5,
+    ratings: 4.5,
     title: "Dishim with Fries and Sauce",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     price: "7.10",
@@ -10,7 +10,7 @@ export const menu = [
   {
     id: 2,
     img: "/images/chicken-hot-wings.png",
-    ratings: 4,
+    ratings: 5,
     title: "Chicken Hot Wings",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     price: "6.40",
@@ -42,7 +42,7 @@ export const menu = [
   {
     id: 6,
     img: "/images/breakfast-with-half-fried-egg.png",
-    ratings: 4,
+    ratings: 5,
     title: "Breakfast with Half Egg Fried",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     price: "6.50",

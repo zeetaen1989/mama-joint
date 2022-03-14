@@ -68,15 +68,29 @@
 // Desktop
 @media screen and (max-width: $desktop) {
   .container {
-    bottom: 23rem;
+    bottom: 22rem;
+    padding: 0rem 10rem;
+
+    .container__block {
+      padding: 2rem 9rem;
+    }
+  }
+}
+
+// Between 940px to 768px
+@media screen and (max-width: 940px) and (min-width: 768px) {
+  .container {
+    bottom: 25rem;
+    padding: 0rem 5rem;
   }
 }
 
 // Tablet
 @media screen and (max-width: $tablet) {
   .container {
+    bottom: 22rem;
+
     .container__block {
-      width: 40rem;
       padding: 2rem 7rem;
     }
   }
@@ -86,22 +100,23 @@
 @media screen and (max-width: $mobile) {
   .container {
     bottom: 33rem;
+    padding: 0rem 1rem;
 
     .container__block {
-      width: 22rem;
-      padding: 2rem 3rem;
+      padding: 1rem;
 
       h3 {
         line-height: 0.8;
       }
+    }
+  }
+}
 
-      .block__input {
-        width: 18rem;
-
-        input {
-          width: 11rem;
-        }
-      }
+// Less than 375px
+@media screen and (max-width: 375px) {
+  .container {
+    .container__block {
+      padding: 1.5rem 0.5rem;
     }
   }
 }

@@ -4,6 +4,7 @@ import Ratings from "../../elements/Ratings/Ratings";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingCart, MdKeyboardArrowRight } from "react-icons/md";
 import styles from "./PopularMenu.module.scss";
+import Link from "next/link";
 
 const PopularMenu = () => {
   return (
@@ -49,12 +50,14 @@ const PopularMenu = () => {
         })}
       </div>
       <div className={styles.container__btn}>
-        <button>
-          See All Menu
+        <div className={styles.btn__link}>
+          <Link href="/menu" passHref >
+            See All Menu
+          </Link>
           <span className={styles.icon}>
             <MdKeyboardArrowRight />
           </span>
-        </button>
+        </div>
       </div>
     </div>
   );

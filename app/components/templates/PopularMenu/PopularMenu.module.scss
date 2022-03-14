@@ -94,10 +94,10 @@
     justify-content: center;
     align-items: center;
 
-    button {
-      @include box-shadow-primary;
+    .btn__link {
       display: flex;
       align-items: center;
+      @include box-shadow-primary;
       background-color: $primary-clr;
       border-radius: 0.3rem;
       padding: 0.5rem 1rem;
@@ -106,22 +106,23 @@
       font-size: 0.8rem;
       cursor: pointer;
 
+      & > a {
+        color: white;
+        text-decoration: none;
+      }
+
       .icon {
         background-color: $opacity-clr;
         border-radius: 0.5rem;
         height: 1.5rem;
         width: 1.5rem;
-        color: $primary-clr;
         display: grid;
         place-content: center;
+        color: $primary-clr;
         font-weight: bold;
         font-size: 1.2rem;
 
-        &:hover {
-          transform: translateX(3px);
-          transition: transform 0.25s ease-in-out;
-          @include box-shadow-primary;
-        }
+        
       }
     }
   }

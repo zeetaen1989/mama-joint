@@ -45,7 +45,9 @@
             min-width: 12rem;
 
             .list__img {
-                @include products-image;
+                & > span {
+                    @include products-image;
+                }
             }
 
             .list__btn {

@@ -38,59 +38,21 @@
             .row__two {
                 display: flex;
                 margin-top: 3rem;
+                gap: 2rem;
 
                 button {
                     @include button-style;
-                    position: relative;
 
-                    &::before, &::after {
-                        content: "";
-                        position: absolute;
-                        height: 0;
-                        width: 0;
-                        border-style: solid;
-                        border-width: 0;
-                    }
-
-                &.btn__cart {
+                    &.btn__cart {
                         background-color: $primary-clr;
                         border-color: $primary-clr;
-                        border-top-right-radius: 0rem;
-
-                        &::after, &::before {
-                            border-width: 0 0 2.4rem 1.7rem;
-                            top: 0;
-                        }
-
-                        &::before {
-                            border-color: transparent;
-                        }
-
-                        &:after {
-                            right: 0px;
-                            border-color: white transparent;
-                        }
+                        @include box-shadow-primary;
                     }
 
                     &.btn__book {
                         background-color: $secondary-clr;
                         border-color: $secondary-clr;
-                        border-bottom-left-radius: 0rem;
-
-                        &::after, &::before {
-                            border-width: 2.3rem 1.7rem 0 0;
-                            top: 0;
-                        }
-
-                        &::before {
-                            left: 0px;
-                            top: 0px;
-                            border-color: white transparent;
-                        }
-
-                        &:after {
-                            border-color: transparent;
-                        }
+                        @include box-shadow-secondary;
                     }
                 }
             }
@@ -243,6 +205,7 @@
 // Mobile
 @media screen and (max-width: $mobile) {
     .container {
+        gap: 0rem;
         flex-direction: column-reverse;
 
         .container__one {
@@ -265,6 +228,14 @@
 
                 .row__three {
                     margin-top: 1rem;
+                }
+            }
+        }
+
+        .container__two {
+            .column__two {
+                .price {
+                    left: 2rem;
                 }
             }
         }

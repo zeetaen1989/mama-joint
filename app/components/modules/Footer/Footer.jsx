@@ -49,7 +49,7 @@ const Footer = () => {
 								</div>
 								<div className={styles.contact__mail}>
 									<MdMailOutline />
-									<p>support@yannal.com</p>
+									<a href="mailto:support@yannal.com">support@yannal.com</a>
 								</div>
 							</div>
 							<div className={styles.info__support}>

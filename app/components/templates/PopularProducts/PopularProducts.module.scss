@@ -49,7 +49,7 @@
             }
 
             .list__btn {
-                @include box-shadow-prop;
+                @include box-shadow-primary;
                 user-select: none;
                 cursor: pointer;
                 margin-top: 1rem;

@@ -22,9 +22,9 @@ export const products = [
     },
     {
         id: 4,
-        title: "Sweetdish",
-        category: "Western",
-        img: "/images/sweet-dish.png",
+        title: "Spaghetti Bolognaise",
+        category: "Italian",
+        img: "/images/spaghetti-bolognaise.png",
         rating: 4,
     }
 ]

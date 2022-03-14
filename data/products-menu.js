@@ -25,9 +25,9 @@ export const menu = [
   },
   {
     id: 4,
-    img: "/images/sweet-sawaiyan.png",
+    img: "/images/spaghetti-bolognaise.png",
     ratings: 5,
-    title: "Sweet Sawaiyan",
+    title: "Spaghetti Bolognaise",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     price: "5.10",
   },

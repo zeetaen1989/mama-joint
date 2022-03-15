@@ -16,15 +16,15 @@ const Tabs = ({ tab, setTab }) => {
           >
             <>
               <div className={styles.tab__btn}>
-                <div className={styles.tab__img}>
+                <figure className={styles.tab__img}>
                   <Image
                     src={type.img}
                     alt={type.title}
                     height={30}
                     width={30}
                   />
-                </div>
-                <div className={styles.tab__title}>{type.title}</div>
+                </figure>
+                <p className={styles.tab__title}>{type.title}</p>
               </div>
             </>
           </div>

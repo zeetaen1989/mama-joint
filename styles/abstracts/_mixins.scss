@@ -5,6 +5,25 @@
     color: $tertiary-clr;
 }
 
+// Button Hover and Active
+@mixin btn-hover-and-active {
+    &:hover {
+        transform: translateY(-1px);
+        transition: transform 0.25s ease-in-out;
+    }
+
+    &:active {
+        transform: translateY(1px);
+        transition: transform 0.25s ease-in-out;
+    }
+}
+
+// Next Links Buttons
+@mixin next-links {
+    color: white;
+    text-decoration: none;
+}
+
 //*******HEADER SECTION*******
 // Header container
 @mixin container-header-style {
@@ -28,7 +47,7 @@
     color: $primary-clr;
     font-family: $font-family-secondary;
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: -0.1rem;
 }
 

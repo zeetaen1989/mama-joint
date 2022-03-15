@@ -101,6 +101,10 @@
 // Mobile
 @media screen and (max-width: $mobile) {
   .header {
+    .header__left {
+      width: 7rem;
+      height: 3rem;
+    }
 
     .header__center {
       ul {

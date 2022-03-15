@@ -50,7 +50,7 @@ const Nav = () => {
       <header className={styles.header}>
         <div className={styles.header__left}>
           <Link href="/" passHref >
-            <Image src="/images/logo.svg" alt="Logo" height={30} width={100} />
+            <Image src="/images/logo.png" alt="Logo" height={80} width={200} />
           </Link>
         </div>
         <nav className={styles.header__center}>

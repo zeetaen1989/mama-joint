@@ -2,33 +2,33 @@
 @import "/styles/abstracts/mixins";
 
 .column__tab {
-  margin-top: 2rem;
-	margin-left: 13rem;
-	// flex: 1;
-	// order: -1;
+	flex: 1;
+	order: -1;
+	text-align: center;
 
   .tab__active {
-    margin: 2rem 0rem;
+		margin: 2rem 0rem;
 
     .tab__btn {
 			@include box-shadow-primary;
-			user-select: none;
 			display: flex;
-			gap: 0.8rem;
 			justify-content: flex-start;
 			align-items: center;
+			gap: 0.8rem;
 			background-color: $primary-clr;
 			color: white;
-			border-radius: 0.3rem;
+			border-radius: 0.5rem;
 			font-size: 0.8rem;
-			width: 9rem;
 			padding: 0.5rem 1rem 0.5rem 0.3rem;
-			cursor: pointer;
 			transform: translateX(10px);
-			transition: transform 0.15s ease-in-out;
+			transition: transform 0.25s ease-in-out;
+			cursor: pointer;
+			user-select: none;
 
 			.tab__img {
-					display: grid;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
     }
   }

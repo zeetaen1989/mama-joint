@@ -14,7 +14,7 @@ const Discounts = () => {
           offer.
         </p>
         <div className={styles.block__input}>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" aria-label="email address" id="email" required />
           <button>Subscribe</button>
         </div>
       </div>

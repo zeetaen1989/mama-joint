@@ -13,16 +13,16 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <>
-      <div className={styles.container}>
+      <footer className={styles.container}>
         <Discounts />
         <div className={styles.container__footer}>
           <div className={styles.footer__logo}>
             <div className={styles.logo__img}>
               <Image
-                src="/images/logo-white.svg"
+                src="/images/logo-white.png"
                 alt="logo"
-                height={100}
-                width={100}
+                height={80}
+                width={150}
               />
             </div>
             <div className={styles.logo__links}>
@@ -80,7 +80,7 @@ const Footer = () => {
           <FaCopyright />
           <p>2021 Yannal Restaurant</p>
         </div>
-      </div>
+      </footer>
     </>
   );
 };

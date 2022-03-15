@@ -16,12 +16,12 @@ export const types = [
     },
     {
         id: 4,
-        title: "Misc Food",
-        img: "/images/menu.png",
+        title: "Deserts",
+        img: "/images/donut.png",
     },
     {
         id: 5,
-        title: "Deserts",
-        img: "/images/donut.png",
+        title: "Misc Food",
+        img: "/images/menu.png",
     }
 ]

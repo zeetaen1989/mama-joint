@@ -10,7 +10,6 @@ const ProductType = () => {
   return (
     <div className={styles.container__column}>
       <Tabs tab={tab} setTab={setTab} />
-      <Separator tab={tab} setTab={setTab} />
       <CategoryItems tab={tab} setTab={setTab} />
     </div>
   );

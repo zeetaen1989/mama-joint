@@ -47,8 +47,50 @@
 			padding: 0.5rem 1rem 0.5rem 0.3rem;
 
 			.tab__img {
-					display: grid;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
   }
+}
+
+//********MEDIA QUERY********
+
+// Tablet
+@media screen and (max-width: $tablet) {
+  .column__tab {
+		.tab__active {
+			margin: 1rem 0rem;
+		}
+
+		.tab__inactive {
+			margin: 1rem 0rem;
+		}
+	}
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+	.column__tab {
+		display: flex;
+		margin-bottom: -2rem;
+
+		.tab__active {
+			margin: 1rem 0rem;
+
+			.tab__btn {
+				transform: translateY(5px);
+				padding: 0.5rem 1rem;
+
+				.tab__img {
+					display: none;
+				}
+			}
+		}
+
+		.tab__inactive {
+			margin: 1rem 0rem;
+		}
+	}
 }

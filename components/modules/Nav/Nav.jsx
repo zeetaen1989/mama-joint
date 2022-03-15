@@ -48,11 +48,11 @@ const Nav = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.header__left}>
+        <figure className={styles.header__left}>
           <Link href="/" passHref >
             <Image src="/images/logo.png" alt="Logo" height={80} width={200} />
           </Link>
-        </div>
+        </figure>
         <nav className={styles.header__center}>
           <ul>
             <li>
@@ -66,14 +66,14 @@ const Nav = () => {
             </li>
           </ul>
         </nav>
-        <div className={styles.header__right}>
+        <section className={styles.header__right}>
           <MdSearch style={iconStyle} />
           <MdOutlineShoppingCart style={iconStyle} />
           <MdOutlineAccountCircle style={iconStyle} />
           <div className={styles.header__menu}>
             {open ? closeMenu : openMenu}
           </div>
-        </div>
+        </section>
       </header>
     </>
   );

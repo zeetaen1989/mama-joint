@@ -16,15 +16,15 @@ const Footer = () => {
       <footer className={styles.container}>
         <Discounts />
         <div className={styles.container__footer}>
-          <div className={styles.footer__logo}>
-            <div className={styles.logo__img}>
+          <section className={styles.footer__logo}>
+            <figure className={styles.logo__img}>
               <Image
                 src="/images/logo-white.png"
                 alt="logo"
                 height={80}
                 width={150}
               />
-            </div>
+            </figure>
             <div className={styles.logo__links}>
               <a href="https://www.facebook.com/">
                 <FaFacebookF />
@@ -39,13 +39,13 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
             </div>
-          </div>
-          <div className={styles.footer__info}>
-            <div className={styles.info__contact}>
+          </section>
+          <section className={styles.footer__info}>
+            <address className={styles.info__contact}>
               <h3>Contact</h3>
               <div className={styles.contact__location}>
                 <MdLocationPin />
-                <p>F1 - 320 Jeff Heights, Main Blvd, New York, USA</p>
+                <p>F1 - 320 Jeff Heights, New York</p>
               </div>
               <div className={styles.contact__phone}>
                 <MdPhone />
@@ -55,8 +55,8 @@ const Footer = () => {
                 <MdMailOutline />
                 <a href="mailto:support@yannal.com">support@yannal.com</a>
               </div>
-            </div>
-            <div className={styles.info__support}>
+            </address>
+            <section className={styles.info__support}>
               <h3>Support</h3>
               <div className={styles.support__links}>
                 <a href="#">FAQ</a>
@@ -64,8 +64,8 @@ const Footer = () => {
                 <a href="#">Contact Us</a>
                 <a href="#">Our Partners</a>
               </div>
-            </div>
-            <div className={styles.info__items}>
+            </section>
+            <section className={styles.info__items}>
               <h3>Info</h3>
               <div className={styles.items__list}>
                 <a href="#">Dates</a>
@@ -73,8 +73,8 @@ const Footer = () => {
                 <a href="#">Birthdays</a>
                 <a href="#">Menu</a>
               </div>
-            </div>
-          </div>
+            </section>
+          </section>
         </div>
         <div className={styles.container__copyright}>
           <FaCopyright />

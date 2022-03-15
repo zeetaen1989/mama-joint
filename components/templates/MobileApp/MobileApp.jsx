@@ -1,18 +1,14 @@
 import Image from "next/image";
 import styles from "./MobileApp.module.scss";
 import { BiMenuAltLeft } from "react-icons/bi";
-import {
-  MdOutlineShoppingCart,
-  MdHome,
-  MdNotifications,
-} from "react-icons/md";
+import { MdOutlineShoppingCart, MdHome, MdNotifications } from "react-icons/md";
 import { FaHeart, FaShoppingBag, FaGooglePlay, FaApple } from "react-icons/fa";
 import { RiHeartFill } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import {
   mobileProductsRow,
   mobileProductsCol,
-} from "../../../../data/products-mobile";
+} from "../../../data/products-mobile";
 import { Ratings } from "../../elements";
 
 const MobileApp = () => {
@@ -129,9 +125,15 @@ const MobileApp = () => {
       </div>
       <div className={styles.container__info}>
         <h3>Download Our App</h3>
-        <h1>It&apos;s all here.<br />
-          All in one app.</h1>
-        <p>Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience stores, and more.</p>
+        <h1>
+          It&apos;s all here.
+          <br />
+          All in one app.
+        </h1>
+        <p>
+          Discover local, on-demand delivery or Pickup from restaurants, nearby
+          grocery and convenience stores, and more.
+        </p>
         <div className={styles.info__btn}>
           <a href="https://apple.com" className={styles.btn__apple}>
             <div className={styles.btn__icon}>

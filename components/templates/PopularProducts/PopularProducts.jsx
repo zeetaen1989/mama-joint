@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./PopularProducts.module.scss";
-import { products } from "../../../../data/products-popular";
+import { products } from "../../../data/products-popular";
 import { Ratings } from "../../elements";
 
 const PopularProducts = () => {
@@ -32,9 +32,7 @@ const PopularProducts = () => {
               <Ratings rating={product.rating} />
               <p className={styles.list__category}>{product.category}</p>
               <h2 className={styles.list__title}>{product.title}</h2>
-              <button className={styles.list__btn}>
-                Add to Cart
-              </button>
+              <button className={styles.list__btn}>Add to Cart</button>
             </div>
           );
         })}

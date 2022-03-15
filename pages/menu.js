@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Nav, Footer } from "../app/components/modules";
-import { Menu } from "../app/components/layouts";
+import { Nav, Footer } from "../components/modules";
+import { Menu } from "../components/layouts";
 
 const MenuPage = () => {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tabs, Separator } from "../../elements";
+import { Tabs } from "../../elements";
 import CategoryItems from "../CategoryItems/CategoryItems";
 import styles from "./Category.module.scss";
 

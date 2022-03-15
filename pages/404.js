@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Error } from "../app/components/layouts";
-import { Footer, Nav } from "../app/components/modules";
+import { Error } from "../components/layouts";
+import { Footer, Nav } from "../components/modules";
 
 const ErrorPage = () => {
   return (

@@ -9,14 +9,17 @@ const Discounts = () => {
         <div className={styles.block__img}>
           <Image src="/images/shape.png" alt="shape" height={10} width={100} />
         </div>
-        <p>Input email address and complete your subscription to get our special offer.</p>
+        <p>
+          Input email address and complete your subscription to get our special
+          offer.
+        </p>
         <div className={styles.block__input}>
-          <input type="email" name="email" id="email" required/>
+          <input type="email" name="email" id="email" required />
           <button>Subscribe</button>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Discounts
+export default Discounts;

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { menu } from "../../../../data/products-menu";
-import Ratings from "../../elements/Ratings/Ratings";
+import { menu } from "../../../data/products-menu";
+import Ratings from "../../elements";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingCart, MdKeyboardArrowRight } from "react-icons/md";
 import styles from "./PopularMenu.module.scss";

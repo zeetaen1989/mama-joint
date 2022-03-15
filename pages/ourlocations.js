@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Locations } from "../app/components/layouts";
-import { Nav, Footer } from "../app/components/modules";
+import { Locations } from "../components/layouts";
+import { Nav, Footer } from "../components/modules";
 
 const OurLocationsPage = () => {
   return (

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Specials } from "../app/components/layouts";
-import { Nav, Footer } from "../app/components/modules";
+import { Specials } from "../components/layouts";
+import { Nav, Footer } from "../components/modules";
 
 const OurSpecialsPage = () => {
   return (

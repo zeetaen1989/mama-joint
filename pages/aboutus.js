@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Nav, Footer } from "../app/components/modules";
-import { About } from "../app/components/layouts";
+import { Nav, Footer } from "../components/modules";
+import { About } from "../components/layouts";
 
 const AboutPage = () => {
   return (

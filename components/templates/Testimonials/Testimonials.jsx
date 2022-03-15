@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { testimonial } from "../../../../data/testimonials";
+import { testimonial } from "../../../data/testimonials";
 import { Ratings } from "../../elements";
 import styles from "./Testimonials.module.scss";
 

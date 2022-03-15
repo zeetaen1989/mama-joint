@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Chef } from "../app/components/layouts";
-import { Nav, Footer } from "../app/components/modules";
+import { Chef } from "../components/layouts";
+import { Nav, Footer } from "../components/modules";
 
 const OurChefPage = () => {
   return (

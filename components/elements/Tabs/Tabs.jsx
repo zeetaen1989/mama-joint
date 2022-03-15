@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { types } from "../../../../data/products-type";
+import { types } from "../../../data/products-type";
 import styles from "./Tabs.module.scss";
 
 const Tabs = ({ tab, setTab }) => {

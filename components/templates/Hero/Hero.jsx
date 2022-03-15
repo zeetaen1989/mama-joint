@@ -6,7 +6,7 @@ const Hero = () => {
     <div className={styles.container}>
       <div className={styles.container__one}>
         <div className={styles.column__one}>
-          <div className={styles.row__one}>
+          <section className={styles.row__one}>
             <p className={styles.desc}>Now taking online orders</p>
             <h1 className={styles.title}>kebabs</h1>
             <p className={styles.info}>
@@ -14,35 +14,35 @@ const Hero = () => {
               and easy to. This is a standard Indian mint chutney served with
               poppadums along with mint and lemon.
             </p>
-          </div>
-          <div className={styles.row__two}>
+          </section>
+          <section className={styles.row__two}>
             <button className={styles.btn__cart}>Add To Cart</button>
             <button className={styles.btn__book}>Book a Table</button>
-          </div>
-          <div className={styles.row__three}>
+          </section>
+          <section className={styles.row__three}>
             <div className={styles.lunch}>
               <h4>Lunch</h4>
-              <span className={styles.time}>1:00 - 3:00pm</span>
+              <time className={styles.time}>1:00 - 3:00pm</time>
             </div>
             <div className={styles.dinner}>
               <h4>Dinner</h4>
-              <span className={styles.time}>7:00 - 10:00pm</span>
+              <time className={styles.time}>7:00 - 10:00pm</time>
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <div className={styles.container__two}>
-        <div className={styles.column__two}>
+        <section className={styles.column__two}>
           <span className={styles.price}>$4.97</span>
-          <div className={styles.img__top}>
+          <figure className={styles.img__top}>
             <Image
               src="/images/leaves-overlay.png"
               width={600}
               height={450}
               alt="Mint Leaves"
             />
-          </div>
-          <div className={styles.img__bottom}>
+          </figure>
+          <figure className={styles.img__bottom}>
             <Image
               src="/images/hero-img.png"
               width={500}
@@ -50,8 +50,8 @@ const Hero = () => {
               alt="Kebabs"
               priority
             />
-          </div>
-        </div>
+          </figure>
+        </section>
       </div>
     </div>
   );

@@ -14,39 +14,39 @@ import { Ratings } from "../../elements";
 const MobileApp = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.container__mobile}>
+      <section className={styles.container__mobile}>
         <span className={styles.mobile__btn}></span>
         <div className={styles.mobile__img}>
-          <div className={styles.img__one}>
+          <figure className={styles.img__one}>
             <Image src="/images/leaf4.png" alt="Leaf" height={35} width={70} />
-          </div>
-          <div className={styles.img__two}>
+          </figure>
+          <figure className={styles.img__two}>
             <Image src="/images/leaf2.png" alt="Leaf" height={15} width={30} />
-          </div>
+          </figure>
         </div>
         <div className={styles.mobile}>
-          <div className={styles.mobile__header}>
+          <section className={styles.mobile__header}>
             <span className={styles.header__link}>
               <BiMenuAltLeft />
             </span>
             <span className={styles.header__cart}>
               <MdOutlineShoppingCart />
             </span>
-          </div>
+          </section>
           <h2>Yannal Restaurant</h2>
           <div className={styles.mobile__products}>
-            <div className={styles.products__row}>
+            <section className={styles.products__row}>
               {mobileProductsRow.map((item) => {
                 return (
                   <div className={styles.row__items} key={item.id}>
-                    <div className={styles.items__img}>
+                    <figure className={styles.items__img}>
                       <Image
                         src={item.img}
                         alt={item.title}
                         height={110}
                         width={110}
                       />
-                    </div>
+                    </figure>
                     <>
                       <div className={styles.items__info}>
                         <h5>{item.title}</h5>
@@ -64,19 +64,19 @@ const MobileApp = () => {
                   </div>
                 );
               })}
-            </div>
-            <div className={styles.products__column}>
+            </section>
+            <section className={styles.products__column}>
               {mobileProductsCol.map((item) => {
                 return (
                   <div key={item.id} className={styles.column__items}>
-                    <div className={styles.items__img}>
+                    <figure className={styles.items__img}>
                       <Image
                         src={item.img}
                         alt={item.title}
                         height={110}
                         width={110}
                       />
-                    </div>
+                    </figure>
                     <>
                       <div className={styles.items__info}>
                         <h5>{item.title}</h5>
@@ -94,7 +94,7 @@ const MobileApp = () => {
                   </div>
                 );
               })}
-            </div>
+            </section>
           </div>
           <div className={styles.mobile__menu}>
             <div className={styles.menu__left}>
@@ -122,8 +122,8 @@ const MobileApp = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.container__info}>
+      </section>
+      <section className={styles.container__info}>
         <h3>Download Our App</h3>
         <h1>
           It&apos;s all here.
@@ -154,7 +154,7 @@ const MobileApp = () => {
             </div>
           </a>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -9,28 +9,28 @@ import Link from "next/link";
 const PopularMenu = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.container__img}>
+      <figure className={styles.container__img}>
         <Image src="/images/leaf3.png" alt="leaf" width={60} height={150} />
-      </div>
-      <div className={styles.container__header}>
+      </figure>
+      <section className={styles.container__header}>
         <h3>Popular Menu</h3>
         <h1>Amazing Food Served With Delicacy</h1>
-        <div className={styles.header__img}>
+        <figure className={styles.header__img}>
           <Image src="/images/shape.png" alt="shape" width={150} height={20} />
-        </div>
-      </div>
-      <div className={styles.container__products}>
+        </figure>
+      </section>
+      <section className={styles.container__products}>
         {menu.map((item) => {
           return (
             <div key={item.id} className={styles.products__item}>
-              <div className={styles.products__img}>
+              <figure className={styles.products__img}>
                 <Image
                   src={item.img}
                   alt={item.title}
                   width={150}
                   height={150}
                 />
-              </div>
+              </figure>
               <Ratings rating={item.ratings} />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
@@ -48,8 +48,8 @@ const PopularMenu = () => {
             </div>
           );
         })}
-      </div>
-      <div className={styles.container__btn}>
+      </section>
+      <section className={styles.container__btn}>
         <div className={styles.btn__link}>
           <Link href="/menu" passHref >
             See All Menu
@@ -58,7 +58,7 @@ const PopularMenu = () => {
             <MdKeyboardArrowRight />
           </span>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import styles from "./Discounts.module.scss";
 
 const Discounts = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.container__block}>
         <h3>Get Special Discounts</h3>
         <div className={styles.block__img}>
@@ -18,7 +18,7 @@ const Discounts = () => {
           <button>Subscribe</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -59,7 +59,7 @@
 
             .row__three {
                 display: flex;
-                gap: 2.5rem;
+                gap: 4.2rem;
                 margin-top: 4rem;
 
                 .lunch, .dinner {
@@ -118,10 +118,6 @@
             .column__one {
                 margin-top: 5rem;
                 margin-left: 2rem;
-
-                .row__three {
-                    gap: 2rem;
-                }
             }
         }
 
@@ -170,7 +166,6 @@
 
                 .row__three {
                     margin-top: 3rem;
-                    gap: 1rem;
 
                     .lunch, .dinner {
                         span {
@@ -189,14 +184,6 @@
                 .price {
                     top: 7rem;
                     font-size: 2rem;
-                }
-
-                .img__top {
-
-                }
-
-                .img__bottom {
-                    // width: 22rem;
                 }
             }
         }
@@ -229,6 +216,7 @@
 
                 .row__three {
                     margin-top: 1rem;
+                    gap: 5.5rem;
                 }
             }
         }

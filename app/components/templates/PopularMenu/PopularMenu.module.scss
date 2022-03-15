@@ -98,20 +98,18 @@
     align-items: center;
 
     .btn__link {
+      @include box-shadow-primary;
       display: flex;
       align-items: center;
-      @include box-shadow-primary;
       background-color: $primary-clr;
       border-radius: 0.3rem;
       padding: 0.5rem 1rem;
-      color: white;
       gap: 0.5rem;
       font-size: 0.8rem;
       cursor: pointer;
 
       & > a {
-        color: white;
-        text-decoration: none;
+        @include next-links;
       }
 
       .icon {
@@ -124,8 +122,6 @@
         color: $primary-clr;
         font-weight: bold;
         font-size: 1.2rem;
-
-        
       }
     }
   }

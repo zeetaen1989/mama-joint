@@ -29,7 +29,7 @@ const PopularProducts = () => {
                   alt={product.title}
                 />
               </div>
-              <Ratings rating={product.rating} />
+              <Ratings rating={product.ratings} />
               <p className={styles.list__category}>{product.category}</p>
               <h2 className={styles.list__title}>{product.title}</h2>
               <button className={styles.list__btn}>Add to Cart</button>

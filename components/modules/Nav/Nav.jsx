@@ -16,11 +16,10 @@ const iconStyle = {
   cursor: "pointer",
   _hover: {
     color: "#000000",
-  }
-}
+  },
+};
 
 const Nav = () => {
-
   const [open, setOpen] = useState(false);
 
   const openMenu = (
@@ -32,7 +31,7 @@ const Nav = () => {
       }}
     />
   );
-  
+
   const closeMenu = (
     <MdRestaurantMenu
       style={iconStyle}
@@ -43,25 +42,34 @@ const Nav = () => {
     />
   );
 
-  const linkItems = ["Menu", "About Us", "Our Specials", "Our Locations", "Our Chef"];
+  const linkItems = [
+    "Menu",
+    "About Us",
+    "Our Specials",
+    "Our Locations",
+    "Our Chef",
+  ];
 
   return (
     <>
       <header className={styles.header}>
         <figure className={styles.header__left}>
-          <Link href="/" passHref >
-            <Image src="/images/logo.png" alt="Logo" height={80} width={200} />
+          <Link href="/" passHref>
+            <Image src="/images/logo.png" alt="Logo" height={60} width={100} />
           </Link>
         </figure>
         <nav className={styles.header__center}>
           <ul>
             <li>
-              {linkItems.map(item => {
+              {linkItems.map((item) => {
                 return (
-                  <Link href={`/${item.replace(/\s+/g, "").toLowerCase()}`} key={item}>
+                  <Link
+                    href={`/${item.replace(/\s+/g, "").toLowerCase()}`}
+                    key={item}
+                  >
                     {item}
                   </Link>
-                )
+                );
               })}
             </li>
           </ul>

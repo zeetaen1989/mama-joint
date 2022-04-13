@@ -21,8 +21,8 @@ const Footer = () => {
               <Image
                 src="/images/logo-white.png"
                 alt="logo"
-                height={80}
-                width={150}
+                height={60}
+                width={100}
               />
             </figure>
             <div className={styles.logo__links}>

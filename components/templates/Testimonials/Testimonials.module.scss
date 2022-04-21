@@ -24,16 +24,17 @@
     display: flex;
     gap: 4rem;
     padding: 5rem 10rem 2rem;
+    position: relative;
 
     .cards {
       display: flex;
-      justify-content: center;
       gap: 1rem;
+      position: absolute;
 
       .card__img {
         & > span {
-        border-radius: 0.3rem;
-        @include box-shadow-secondary;
+          border-radius: 0.3rem;
+          @include box-shadow-secondary;
         }
       }
 

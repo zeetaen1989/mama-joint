@@ -21,7 +21,7 @@ const CategoryItems = ({ tab, setTab }) => {
           7-day free trial.
         </p>
         <div className={styles.info__btn}>
-          <Link href="/menu" passHref >
+          <Link href="/menu" passHref>
             Get Started
           </Link>
         </div>

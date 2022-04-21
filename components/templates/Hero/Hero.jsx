@@ -82,9 +82,8 @@ const Hero = () => {
           </section>
         </div>
       </div>
-      <div className={styles.container__two}>
+      <div className={styles.container__three}>
         <section className={styles.column__two}>
-          <span className={styles.price}>$4.97</span>
           <figure className={styles.img__top}>
             <Image
               src="/images/leaves-overlay.png"
@@ -94,13 +93,18 @@ const Hero = () => {
             />
           </figure>
           <figure className={styles.img__bottom}>
-            <Image
-              src="/images/hero-img.png"
-              width={500}
-              height={540}
-              alt="Kebabs"
-              priority
-            />
+            {products.map((product) => (
+              <div key={product.id}>
+                <span className={styles.price}>${product.price}</span>
+                <Image
+                  src={product.img}
+                  width={500}
+                  height={540}
+                  alt="Kebabs"
+                  priority
+                />
+              </div>
+            ))}
           </figure>
         </section>
       </div>

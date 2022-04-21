@@ -1,19 +1,70 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
+import { hero } from "../../../data/hero";
 
 const Hero = () => {
+  const [index, setIndex] = useState(0);
+  const [products, setProducts] = useState(hero);
+
+  useEffect(() => {
+    const lastIndex = products.length - 1;
+
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, products]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 5000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
+
   return (
     <div className={styles.container}>
       <div className={styles.container__one}>
+        <div className={styles.column__slide}>
+          <span className={styles.slide__dot}></span>
+          <span className={styles.slide__dot}></span>
+          <span className={styles.slide__dot}></span>
+          <span className={styles.slide__dot}></span>
+          <span className={styles.slide__dot}></span>
+        </div>
+      </div>
+      <div className={styles.container__two}>
         <div className={styles.column__one}>
           <section className={styles.row__one}>
-            <p className={styles.desc}>Now taking online orders</p>
-            <h1 className={styles.title}>kebabs</h1>
-            <p className={styles.info}>
-              Restaurant style Yogurt Mint Sauce is delicious dip which is quick
-              and easy to. This is a standard Indian mint chutney served with
-              poppadums along with mint and lemon.
-            </p>
+            <p className={styles.announcement}>Now taking online orders</p>
+            {products.map((item, itemIndex) => {
+              const { id, title, description } = item;
+
+              let position = "nextSlide";
+
+              if (itemIndex === index) {
+                position = "currentSlide";
+              }
+              if (
+                itemIndex === index - 1 ||
+                (itemIndex === item.length - 1 && index === 0)
+              ) {
+                position = "lastSlide";
+              }
+
+              return (
+                <article className={position} key={id}>
+                  <h1 className={styles.title}>{title}</h1>
+                  <p className={styles.info}>{description}</p>
+                </article>
+              );
+            })}
           </section>
           <section className={styles.row__two}>
             <button className={styles.btn__cart}>Add To Cart</button>

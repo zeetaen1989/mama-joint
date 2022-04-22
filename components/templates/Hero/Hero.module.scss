@@ -2,29 +2,11 @@
 @import "/styles/abstracts/mixins";
 
 .container {
-    padding: 0rem 3rem;
+    padding: 0rem 6rem;
     display: grid;
-	grid-template-columns: 0.15fr 1.5fr 2fr;
+	grid-template-columns: 1.7fr 2fr;
 
-	.container__one {
-		.column__slide {
-			display: flex;
-			flex-direction: column;
-			gap: 0.8rem;
-			margin-top: 10rem;
-
-			.slide__dot {
-				height: 0.8rem;
-				width: 0.8rem;
-				border-radius: 50%;
-				background-color: $primary-clr;
-				opacity: 0.15;
-				cursor: pointer;
-			}
-		}
-	}
-
-    .container__two {
+    .container__one {
 		.column__one {
             margin-top: 5rem;
 
@@ -36,14 +18,6 @@
                 }
 
                 article {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    transition: all 0.3s linear;
-
                     h1 {
                         color: $primary-clr;
                         font-size: 7rem;
@@ -57,19 +31,6 @@
                         font-size: 0.9rem;
                         font-weight: 500;
                     }
-                }
-
-                article.currentSlide {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-
-                article.lastSlide {
-                    transform: translateY(-100%);
-                }
-
-                article.nextSlide {
-                    transform: translateY(100%);
                 }
             }
 
@@ -109,10 +70,9 @@
         }
     }
 
-    .container__three {
+    .container__two {
         display: flex;
         justify-content: flex-end;
-		margin-right: 5rem;
 
         .column__two {
             position: relative;
@@ -120,7 +80,7 @@
             .price {
                 position: absolute;
                 top: 8rem;
-                left: -4rem;
+                left: -6rem;
                 z-index: 3;
                 color: $tertiary-clr;
                 font-size: 2.5rem;
@@ -150,16 +110,14 @@
 // Desktop
 @media screen and (max-width: $desktop) {
     .container {
+        padding: 0rem 4rem;
         .container__one {
             .column__one {
                 margin-top: 5rem;
-                margin-left: 2rem;
             }
         }
 
         .container__two {
-            margin-right: 2rem;
-
             .column__two {
                 .price {
                     top: 5rem;
@@ -177,14 +135,10 @@
 // Tablet
 @media screen and (max-width: $tablet) {
     .container {
-        padding: 0rem 1rem;
+        padding: 0rem 2rem;
 
         .container__one {
-            flex: 1;
-
             .column__one {
-                margin-left: 1rem;
-
                 .row__one {
                     h1 {
                         font-size: 5rem;
@@ -202,6 +156,7 @@
 
                 .row__three {
                     margin-top: 3rem;
+                    gap: 2.5rem;
 
                     .lunch, .dinner {
                         span {
@@ -213,12 +168,9 @@
         }
 
         .container__two {
-            flex: 1;
-            margin-right: 0rem;
-
             .column__two {
                 .price {
-                    top: 7rem;
+                    top: 3rem;
                     font-size: 2rem;
                 }
             }
@@ -229,9 +181,9 @@
 // Mobile
 @media screen and (max-width: $mobile) {
     .container {
-        gap: 0rem;
+        display: flex;
         flex-direction: column-reverse;
-
+        
         .container__one {
             .column__one {
                 margin-top: 1rem;

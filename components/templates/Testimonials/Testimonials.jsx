@@ -1,34 +1,9 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { testimonial } from "../../../data/testimonials";
 import { Ratings } from "../../elements";
 import styles from "./Testimonials.module.scss";
 
 const Testimonials = () => {
-  const [index, setIndex] = useState(0);
-  const [data, setData] = useState(testimonial);
-
-  useEffect(() => {
-    const lastIndex = data.length - 1;
-
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, data]);
-
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 5000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
-
   return (
     <div className={styles.container}>
       <section className={styles.container__header}>
@@ -42,18 +17,6 @@ const Testimonials = () => {
         {testimonial.map((item, itemIndex) => {
           const { id, img, ratings, location, name, designation, message } =
             item;
-
-          let cards = "next__slide";
-
-          if (itemIndex === index) {
-            cards = "active__slide";
-          }
-          if (
-            itemIndex === index - 1 ||
-            (index === 0 && itemIndex === item.length - 1)
-          ) {
-            cards = "last__slide";
-          }
 
           return (
             <article className={styles.cards} key={id}>

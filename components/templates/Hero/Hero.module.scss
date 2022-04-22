@@ -2,219 +2,220 @@
 @import "/styles/abstracts/mixins";
 
 .container {
-    padding: 0rem 6rem;
-    display: grid;
+	padding: 0rem 6rem;
+	display: grid;
 	grid-template-columns: 1.7fr 2fr;
 
-    .container__one {
+	.container__one {
 		.column__one {
-            margin-top: 5rem;
+			margin-top: 5rem;
 
-            .row__one {
-                .announcement {
-                    color: $primary-clr;
-                    text-transform: uppercase;
-                    font-size: 0.8rem;
-                }
+			.row__one {
+				.announcement {
+					color: $primary-clr;
+					text-transform: uppercase;
+					font-size: 0.8rem;
+				}
 
-                article {
-                    h1 {
-                        color: $primary-clr;
-                        font-size: 7rem;
-                        padding-left: 2rem;
-                        font-family: $font-family-secondary;
-                        margin-bottom: -3rem;
-                        letter-spacing: -0.5rem;
-                    }
-    
-                    .info {
-                        font-size: 0.9rem;
-                        font-weight: 500;
-                    }
-                }
-            }
+				article {
+					h1 {
+						color: $primary-clr;
+						font-size: 7rem;
+						padding-left: 2rem;
+						font-family: $font-family-secondary;
+						margin-bottom: -3rem;
+						letter-spacing: -0.5rem;
+					}
 
-            .row__two {
-                display: flex;
-                margin-top: 3rem;
-                gap: 2rem;
+					.info {
+						font-size: 0.9rem;
+						font-weight: 500;
+					}
+				}
+			}
 
-                button {
-                    @include button-style;
+			.row__two {
+				display: flex;
+				margin-top: 3rem;
+				gap: 2rem;
 
-                    &.btn__cart {
-                        background-color: $primary-clr;
-                        border-color: $primary-clr;
-                        @include box-shadow-primary;
-                    }
+				button {
+					@include button-style;
 
-                    &.btn__book {
-                        background-color: $secondary-clr;
-                        border-color: $secondary-clr;
-                        @include box-shadow-secondary;
-                    }
-                }
-            }
+					&.btn__cart {
+						background-color: $primary-clr;
+						border-color: $primary-clr;
+						@include box-shadow-primary;
+					}
 
-            .row__three {
-                display: flex;
-                gap: 4.2rem;
-                margin-top: 4rem;
+					&.btn__book {
+						background-color: $secondary-clr;
+						border-color: $secondary-clr;
+						@include box-shadow-secondary;
+					}
+				}
+			}
 
-                .lunch, .dinner {
-                    time {
-                        @include span-clr;
-                    }
-                }
-            }
-        }
-    }
+			.row__three {
+				display: flex;
+				gap: 4.2rem;
+				margin-top: 4rem;
 
-    .container__two {
-        display: flex;
-        justify-content: flex-end;
+				.lunch, .dinner {
+					time {
+						@include span-clr;
+					}
+				}
+			}
+		}
+	}
 
-        .column__two {
-            position: relative;
-            
-            .price {
-                position: absolute;
-                top: 8rem;
-                left: -6rem;
-                z-index: 3;
-                color: $tertiary-clr;
-                font-size: 2.5rem;
-                font-weight: 600;
-                writing-mode: vertical-lr;
-                transform: rotate(180deg);
-                opacity: 0.3;
-                user-select: none;
-            }
+	.container__two {
+		display: flex;
+		justify-content: flex-end;
 
-            .img__top {
-                z-index: 2;
-                position: absolute;
-                top: 10rem;
-            }
+		.column__two {
+			position: relative;
+			
+			.price {
+				position: absolute;
+				top: 8rem;
+				left: -6rem;
+				z-index: 3;
+				color: $tertiary-clr;
+				font-size: 2.5rem;
+				font-weight: 600;
+				writing-mode: vertical-lr;
+				transform: rotate(180deg);
+				opacity: 0.3;
+				user-select: none;
+			}
 
-            .img_bottom {
-                z-index: 1;
-                position: absolute;
-            }
-        }
-    }
+			.img__top {
+				z-index: 2;
+				position: absolute;
+				top: 10rem;
+			}
+
+			.img_bottom {
+				z-index: 1;
+				position: absolute;
+			}
+		}
+	}
 }
 
 //*********MEDIA QUERY*********
 
 // Desktop
 @media screen and (max-width: $desktop) {
-    .container {
-        padding: 0rem 4rem;
-        .container__one {
-            .column__one {
-                margin-top: 5rem;
-            }
-        }
+	.container {
+		padding: 0rem 4rem;
 
-        .container__two {
-            .column__two {
-                .price {
-                    top: 5rem;
-                    left: -2rem;
-                }
+		.container__one {
+			.column__one {
+				margin-top: 5rem;
+			}
+		}
 
-                .img__top {
-                    top: 5rem;
-                }
-            }
-        }
-    }
+		.container__two {
+			.column__two {
+				.price {
+					top: 5rem;
+					left: -2rem;
+				}
+
+				.img__top {
+					top: 5rem;
+				}
+			}
+		}
+	}
 }
 
 // Tablet
 @media screen and (max-width: $tablet) {
-    .container {
-        padding: 0rem 2rem;
+	.container {
+		padding: 0rem 2rem;
 
-        .container__one {
-            .column__one {
-                .row__one {
-                    h1 {
-                        font-size: 5rem;
-                        margin-bottom: -2rem;
-                    }
-                }
+		.container__one {
+			.column__one {
+				.row__one {
+					h1 {
+						font-size: 5rem;
+						margin-bottom: -2rem;
+					}
+				}
 
-                .row__two {
-                    margin-top: 3rem;
+				.row__two {
+					margin-top: 3rem;
 
-                    button {
-                        padding: 0.5rem 1.2rem;
-                    }
-                }
+					button {
+						padding: 0.5rem 1.2rem;
+					}
+				}
 
-                .row__three {
-                    margin-top: 3rem;
-                    gap: 2.5rem;
+				.row__three {
+					margin-top: 3rem;
+					gap: 2.5rem;
 
-                    .lunch, .dinner {
-                        span {
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-        }
+					.lunch, .dinner {
+						span {
+							font-size: 0.8rem;
+						}
+					}
+				}
+			}
+		}
 
-        .container__two {
-            .column__two {
-                .price {
-                    top: 3rem;
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
+	.container__two {
+		.column__two {
+			.price {
+				top: 3rem;
+				font-size: 2rem;
+			}
+		}
+	}
+	}
 }
 
 // Mobile
 @media screen and (max-width: $mobile) {
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-        
-        .container__one {
-            .column__one {
-                margin-top: 1rem;
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
 
-                .row__one {
-                    h1 {
-                        margin-top: -1rem;
-                    }
-                }
+		.container__one {
+			.column__one {
+				margin-top: 1rem;
 
-                .row__two {
-                    margin-top: 1rem;
+				.row__one {
+					h1 {
+						margin-top: -1rem;
+					}
+				}
 
-                    button {
-                        padding: 0.5rem 2rem
-                    }
-                }
+				.row__two {
+					margin-top: 1rem;
 
-                .row__three {
-                    margin-top: 1rem;
-                    gap: 5.5rem;
-                }
-            }
-        }
+					button {
+						padding: 0.5rem 2rem
+					}
+				}
 
-        .container__two {
-            .column__two {
-                .price {
-                    left: 2rem;
-                }
-            }
-        }
-    }
+				.row__three {
+					margin-top: 1rem;
+					gap: 5.5rem;
+				}
+			}
+		}
+
+		.container__two {
+			.column__two {
+				.price {
+					left: 2rem;
+				}
+			}
+		}
+	}
 }

@@ -12,7 +12,7 @@ const LandingPage = () => {
   return (
     <>
       <Head>
-        <title>FoodLab | Pizza Delivery Services</title>
+        <title>Mama&apos;s Joint | Choose From Variety of Menu</title>
       </Head>
       <Nav />
       <Hero />

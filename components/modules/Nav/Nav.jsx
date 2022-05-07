@@ -42,13 +42,7 @@ const Nav = () => {
     />
   );
 
-  const linkItems = [
-    "Menu",
-    "About Us",
-    "Our Specials",
-    "Our Locations",
-    "Our Chef",
-  ];
+  const linkItems = ["About Us", "Our Specials", "Our Locations", "Our Chef"];
 
   return (
     <>

@@ -4,15 +4,15 @@
 .container {
   background-color: $secondary-clr;
   color: white;
-  padding: 5rem 10rem 1rem;
+  padding: 10rem 10rem 1rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 15rem;
+  margin-top: 10rem;
   z-index: 1;
   width: 100%;
 
-  .container__footer {
+  &__footer {
     display: flex;
 
     .footer__logo {
@@ -88,18 +88,10 @@
 }
 
 // *******MEDIA QUERY*******
-
-// Desktop
-@media screen and (max-width: $desktop) {
-  .container {
-    padding: 5rem 7rem 2rem;
-  }
-}
-
 // Tablet
 @media screen and (max-width: $tablet) {
   .container {
-    padding: 5rem 3rem 2rem;
+    padding: 10rem 3rem 1rem;
 
     .container__footer {
       .footer__info {
@@ -112,7 +104,7 @@
 // Mobile
 @media screen and (max-width: $mobile) {
   .container {
-    padding: 2rem 1rem 2rem;
+    padding: 7rem 1rem 2rem;
 
     .container__footer {
       flex-direction: column;

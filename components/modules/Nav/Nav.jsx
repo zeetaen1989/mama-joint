@@ -52,7 +52,7 @@ const Nav = () => {
             <Image src="/images/logo.png" alt="Logo" height={60} width={100} />
           </Link>
         </figure>
-        <nav className={styles.header__center}>
+        <nav className={styles.header__center} aria-label="primary-navigation">
           <ul>
             <li>
               {linkItems.map((item) => {

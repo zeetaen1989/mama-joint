@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
 import { hero } from "../../../data/hero";
@@ -10,7 +9,7 @@ const Hero = () => {
         <div className={styles.column__one}>
           <section className={styles.row__one}>
             <p className={styles.announcement}>Now taking online orders</p>
-            {hero.map((item, itemIndex) => {
+            {hero.map((item) => {
               const { id, title, description } = item;
 
               return (
@@ -28,11 +27,17 @@ const Hero = () => {
           <section className={styles.row__three}>
             <div className={styles.lunch}>
               <h4>Lunch</h4>
-              <time className={styles.time}>1:00 - 3:00pm</time>
+              <p className={styles.time}>
+                <time dateTime="13:00">1:00</time> -{" "}
+                <time dateTime="13:00">3:00pm</time>
+              </p>
             </div>
             <div className={styles.dinner}>
               <h4>Dinner</h4>
-              <time className={styles.time}>7:00 - 10:00pm</time>
+              <p className={styles.time}>
+                <time dateTime="17:00">7:00</time> -{" "}
+                <time dateTime="17:00">10:00pm</time>
+              </p>
             </div>
           </section>
         </div>
